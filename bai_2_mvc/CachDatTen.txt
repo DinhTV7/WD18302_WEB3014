@@ -1,0 +1,4 @@
+Thường sẽ sử dụng 3 cách đặt tên sau:
+    - Pascal Case (CustomerContrller, ProductController): tên file, tên class
+    - Camel Case (conNguoi, nguoiYeuCu, nguoiYeuMoi): tên biến, tên hàm
+    - Snake Case (con_nguoi, nguoi_yeu_cu, nguoi_yeu_moi): trường dữ liệu trong db, key trong mảng
