@@ -1,6 +1,9 @@
 <?php
-require_once "db.php";
-function getProduct () {
-    $sql = "SELECT * FROM product";
-    return dataProcess($sql);
+require_once "BaseModel.php";
+class Product extends BaseModel
+{
+    public function getProduct () {
+        $sql = "SELECT * FROM product";
+        return $this->dataProcess($sql);
+    }
 }

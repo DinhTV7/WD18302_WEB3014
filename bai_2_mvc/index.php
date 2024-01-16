@@ -1,17 +1,17 @@
 <?php
 // giúp điều hướng đến controler mà ta sử dụng
 $url = isset($_GET['url']) == true ? $_GET['url'] : '/';
+require_once "Controller/ProductController.php";
+$productController = new ProductController();
 
 switch ($url) {
     case '/':
         // Trỏ đến controller mà ta sử dụng
-        require_once "Controller/ProductController.php";
-        listProduct();
+        $productController->listProduct();
         break;
     case 'add-product':
         // Trỏ đến controller mà ta sử dụng
-        require_once "Controller/ProductController.php";
-        addProduct();
+        $productController->addProduct();
         break;
 }
 
