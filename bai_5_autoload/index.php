@@ -10,3 +10,5 @@ $homeController = new HomeController();
 $userController = new UserController();
 $user = new User();
 $dinhtv7 = new Dinhtv7();
+
+echo getMess();

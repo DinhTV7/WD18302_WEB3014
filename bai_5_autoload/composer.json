@@ -6,7 +6,8 @@
         "psr-4": {
             "Dinhtv7\\": "./",
             "App\\": ["app/", "helpers/"]
-        }
+        },
+        "files": ["helpers/function.php"]
     },
     "authors": [
         {
