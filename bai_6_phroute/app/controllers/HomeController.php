@@ -7,4 +7,9 @@ class HomeController
     {
         echo "Đây là trang home index $id";
     }
+
+    public function list()
+    {
+        echo "Đây là trang home list";
+    }
 }

@@ -1,6 +1,7 @@
 <?php
 
 use App\Controllers\HomeController;
+use App\Controllers\ProductController;
 use Phroute\Phroute\RouteCollector;
 use Phroute\Phroute\Dispatcher;
 
@@ -31,6 +32,13 @@ $router->get('detail-home/{id}', [HomeController::class, "index"]);
 // detailCategory, editCategory, deleteCategory
 // Tạo các route trỏ đến các phương thức trên
 // Mỗi route hiển thị ra 1 nội dung khác nhau (echo)
+
+$router->group(['prefix' => 'admin'], function ($router) {
+    // Định nghĩa route của group admin
+    $router->get('list-home', [HomeController::class, 'list']);
+});
+
+$router->get('list-product', [ProductController::class, 'index']);
 
 // khu vực cần quan tâm -----------
 
